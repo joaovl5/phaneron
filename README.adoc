@@ -1,0 +1,23 @@
+:showtitle:
+:toc: left
+:icons: font
+
+= Phaneron
+
+== About the project
+
+WARNING: As of the time of writing, Phaneron is mostly a specification, and not complete. In this sense, the name is quite fitting.
+
+*Phaneron* is an editor for manipulating text and other, more abstract, forms of content. It leans on a few pillars:
+
+* _Acessibility & Approachability_ — The user should be able to:
+** Use the application fully in the keyboard, without having to reach for the mouse
+** Understand basic usage and navigation on the app without having to read any documentation or manual
+** Learn fully from inside the app, without having to rely on external sources
+
+== How to install
+
+[source,text]
+----
+$ nix run blabla
+----

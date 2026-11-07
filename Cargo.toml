@@ -1,0 +1,25 @@
+[profile.dev]
+  opt-level   = 1
+  incremental = true
+
+[workspace]
+  members  = ["crates/*"]
+  resolver = "3"
+
+  [workspace.package]
+    version     = "0.1.0"
+    authors     = ["João Pedro"]
+    description = "The Phaneron Editor"
+    edition     = "2024"
+
+  [workspace.metadata]
+    # used on nix packaging
+    project-name = "phaneron"
+
+  [workspace.dependencies]
+    raylib = { version = "6.0.0", features = [
+      "opengl_33",
+    ] }
+
+    derive_more = { version = "2.1.1", features = ["error", "from", "display"] }
+    anyhow      = { version = "1.0.104" }
